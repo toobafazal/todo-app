@@ -1,9 +1,12 @@
 var list = document.getElementById("list");
+var ul = document.getElementById("ul")
 function addTodo(){
     var todo_item = document.getElementById("todo-item");
 
     // create li with text node
     var li = document.createElement('li')
+    li.setAttribute("class","todo-value")
+
     var liText = document.createTextNode(todo_item.value);
 
 if(todo_item.value == ""){
@@ -15,15 +18,14 @@ else{
 // create delete button 
 var delbtn = document.createElement('button')
 var delText = document.createTextNode("DELETE")
-delbtn.setAttribute("class","btn")
+delbtn.setAttribute("class","btn2")
 delbtn.setAttribute("onClick","deleteItem(this)")
 
 // create edit button 
 var editbtn = document.createElement('button')
 var editText = document.createTextNode("EDIT")
-editbtn.setAttribute("class","btn")
+editbtn.setAttribute("class","btn1")
 editbtn.setAttribute("onClick","editItem(this)")
-
 
 
 
@@ -32,7 +34,8 @@ editbtn.setAttribute("onClick","editItem(this)")
     li.appendChild(liText)
     li.appendChild(editbtn)
     li.appendChild(delbtn)
-    list.appendChild(li)
+    list.appendChild(ul)
+    ul.appendChild(li)
     todo_item.value = " ";
     console.log(li)
 }
