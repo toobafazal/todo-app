@@ -52,7 +52,7 @@ input{
     outline: none;
     border:none ;
     background-color: #fff;
-    width: 450px;
+    width: 650px;
     font-size: 1.15rem;
     border-radius: 25px;
     border-bottom: 5px solid rgb(243, 40, 135);
@@ -162,6 +162,14 @@ background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
     input{
         width: 200px;
     }
+    .center{
+        align-items: left;
+        justify-content: left;
+    
+    }
+    .outer{
+        margin: 30px 0;
+    }
     /*.circle{
         height: 70px;
         width: 70px;
@@ -170,12 +178,10 @@ background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
         height: 50px;
         width: 50px;
     }    
-    .outer{
-        margin: 30px 0;
-    }
+    
     .outer button{
         font-size: 10px;
 
-    }
+    }*/
     
-} */
+} 
